@@ -15,7 +15,7 @@ let package = Package(
         
     ],
     dependencies: [
-        .package(url: "https://github.com/socketio/socket.io-client-swift", from: "16.1.0" ),
+        .package(url: "https://github.com/socketio/socket.io-client-swift", from: "16.1.0" )
 
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
@@ -28,11 +28,9 @@ let package = Package(
         
         .binaryTarget(
                 name: "ShuftiPro",
-                url:"https://github.com/shuftipro/ShuftiPro-Onsite-Framework/raw/main/ShuftiPro.xcframework.zip",
-                checksum: "691acca54fb94c75f90497395c7b27b7155750e1295c194cc6eb600cabef820f"
+                url:"https://github.com/shuftipro/shuftipro-framework/raw/main/ShuftiPro.xcframework.zip",
+                checksum: "5f6a39cef870c5138bef17040557ad6f7d7f6e0982505d29eaa566e8a12fcc68"
                       ),
-    
-        
         .target(
             name: "PackageDependencies",
             dependencies: [ .product(name: "SocketIO", package: "socket.io-client-swift")],
