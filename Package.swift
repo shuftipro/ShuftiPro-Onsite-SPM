@@ -29,7 +29,7 @@ let package = Package(
         .binaryTarget(
                 name: "ShuftiPro",
                 url:"https://github.com/shuftipro/ShuftiPro-Onsite-Framework/raw/main/ShuftiPro.xcframework.zip",
-                checksum: "b9ad6493326c8d85b264f540149a38ef10855c08f1eeb5aa95742595b1b73eca"
+                checksum: "5d5fc30b43579b5a78315946df63e108a840e22ec206bb7c4615e8b75abf4b78"
                       ),
         .target(
             name: "PackageDependencies",
