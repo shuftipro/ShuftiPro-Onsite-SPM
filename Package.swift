@@ -11,8 +11,8 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "ShuftiPro",
+            type: .dynamic,
             targets: ["PackageDependencies" , "ShuftiPro"]),
-        
     ],
     dependencies: [
         .package(url: "https://github.com/socketio/socket.io-client-swift", from: "16.1.0" )
@@ -29,7 +29,7 @@ let package = Package(
         .binaryTarget(
                 name: "ShuftiPro",
                 url:"https://github.com/shuftipro/ShuftiPro-Onsite-Framework/raw/main/ShuftiPro.xcframework.zip",
-                checksum: "2793fe13af4599a6df234cf5868215fd188804e464da98bd1fbf18018329132b"
+                checksum: "91b1586591ef6aa2758963b44ae7c469b80da94be60c4bd56d5641f9d21aca59"
                       ),
         .target(
             name: "PackageDependencies",
