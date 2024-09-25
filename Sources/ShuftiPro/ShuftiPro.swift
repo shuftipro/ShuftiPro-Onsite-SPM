@@ -1,5 +1,3 @@
-import Starscream
-import SocketIO
 //import ShuftiPro
 
 struct ShuftiPro {

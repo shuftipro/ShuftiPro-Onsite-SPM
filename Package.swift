@@ -13,12 +13,7 @@ let package = Package(
             name: "ShuftiPro",
             targets: ["PackageDependencies" , "ShuftiPro"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/socketio/socket.io-client-swift", from: "16.1.0" )
-
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-    ],
+    dependencies: [],
    
 
     targets: [
@@ -28,11 +23,11 @@ let package = Package(
         .binaryTarget(
                 name: "ShuftiPro",
                 url:"https://github.com/shuftipro/ShuftiPro-Onsite-Framework/raw/main/ShuftiPro.xcframework.zip",
-                checksum: "2a8d466777326143ce02ec8d5114086904f65bc0c07c55d4cc68ea081892824c"
+                checksum: "c7478c84ecdff49f502e343a1264561867fdf1d2e9c2d0ce0361bec9814f1b84"
                       ),
         .target(
             name: "PackageDependencies",
-            dependencies: [ .product(name: "SocketIO", package: "socket.io-client-swift")],
+            dependencies: [],
             path: "Sources",
             resources: [
                 .process("Resource/Media.xcassets")
