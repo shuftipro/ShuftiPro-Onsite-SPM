@@ -1,34 +1,37 @@
 // swift-tools-version:5.3
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
+let frameworkRepo = "ShuftiPro-Onsite-Framework"
+let version = "1.0.17"
+let frameworkZip = "ShuftiPro.xcframework.zip"
+let checksumValue = "b0489e76d9052e800a638377be13a6d14de7be8a8946348d51f17a198d8e71d5"
+
 let package = Package(
     name: "ShuftiPro",
-    platforms: [.iOS(.v13) ],
-
+    platforms: [.iOS(.v13)],
+    
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "ShuftiPro",
-            targets: ["PackageDependencies" , "ShuftiPro"]),
+            targets: ["PackageDependencies", "ShuftiPro"]
+        ),
     ],
-   
-
+    
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
         
         .binaryTarget(
-                name: "ShuftiPro",
-                url:"https://github.com/ShuftiPro/ShuftiPro-Onsite-Framework/releases/download/1.0.16/ShuftiPro.xcframework.zip",
-                checksum: "b6dec850b60ea8455c831f3b56e23bc1caf55d32aedc1e90ef1b9b5178b378b9"),
-        .target(
-            name: "PackageDependencies",
-            path: "Sources",
-            resources: [
-                .process("Resource/Media.xcassets")
-            ]),
-   
+            name: "ShuftiPro",
+            url: "https://github.com/ShuftiPro/\(frameworkRepo)/releases/download/\(version)/\(frameworkZip)",
+            checksum: checksumValue
+        ),
+        
+            .target(
+                name: "PackageDependencies",
+                path: "Sources",
+                resources: [
+                    .process("Resource/Media.xcassets")
+                ]
+            ),
     ]
 )
