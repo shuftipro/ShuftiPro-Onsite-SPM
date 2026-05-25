@@ -3,9 +3,9 @@
 import PackageDescription
 
 let frameworkRepo = "ShuftiPro-Onsite-Framework"
-let version = "1.0.17"
+let version = "1.0.18"
 let frameworkZip = "ShuftiPro.xcframework.zip"
-let checksumValue = "b0489e76d9052e800a638377be13a6d14de7be8a8946348d51f17a198d8e71d5"
+let checksumValue = "804afcf6e47ade663d2d5d70b83655c2e4b509b89b18d00f7d9d336d0e4474b3"
 
 let package = Package(
     name: "ShuftiPro",
