@@ -1,10 +1,11 @@
+// swift-tools-version:5.9
 
 import PackageDescription
 
 let frameworkRepo = "ShuftiPro-Onsite-SPM"
-let version = "1.0.51"
+let version = "1.4.0"
 let frameworkZip = "ShuftiPro.xcframework.zip"
-let checksumValue = "d3d41d92f575b96db50566c04d85a054f89fa93db9711e031fedc25d06803bc6"
+let checksumValue = "3b84375c60216e2fa80eeec482fbcf01b1e538d28170be62c37dfc50bfc687c5"
 
 let package = Package(
     name: "ShuftiPro-Onsite-SPM",
