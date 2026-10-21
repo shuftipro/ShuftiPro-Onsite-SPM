@@ -75,9 +75,9 @@ Upload the ZIP file as an asset with the exact filename:
 `ShuftiPro.xcframework.zip`
 
 ```bash
-gh release create X.Y.Z ShuftiPro.xcframework.zip \
-  --title "X.Y.Z" \
-  --notes "SDK Release X.Y.Z"
+gh release create 1.4.1 ShuftiPro.xcframework.zip \
+  --title "1.4.1" \
+  --notes "SDK Release 1.4.1"
 ```
 
 ## Step 7 — Validate the Release
